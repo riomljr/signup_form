@@ -1,3 +1,6 @@
+body{
+  height: 100vh;
+}
 #maincontain {
   display: flex;
   height: 100vh;
@@ -83,4 +86,11 @@ input{
   font-family: 'RursusCompactMonoMedium';
    font-weight: normal; 
    font-style: normal; 
+}
+
+#credits {
+  position: absolute;
+  bottom: 3px;
+  margin-left: 5%;
+  color:rgb(135, 118, 96)
 }
