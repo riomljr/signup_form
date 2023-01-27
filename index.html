@@ -9,56 +9,55 @@
   <title>JOCCHE VINTAGE</title>
 </head>
 <body>
-  <div id="right-side">
-    <div id="card"> JOCCHE VINTAGE CO.</div>
-  </div>
-
-  <div id="left">
-    <p>Interested in the lastest finds? Join & stay updated!</p>
-    <div id="entries">
-      <form action="" id="selection">
-        <label for="first-name">FIRST NAME</label>
-        <input type="text" id="first-name">
-      </form>
-      <form action="" id="selection">
-        <label for="last-name">LAST NAME</label>
-        <input type="text" id="last-name">
-      </form>
-      <form action="" id="selection">
-        <label for="email">EMAIL</label>
-        <input type="email" id="email">
-      </form>
-      <form action="" id="selection">
-        <label for="phone">PHONE</label>
-        <input type="phone" id="phone">
-      </form>
-      <form action="" id="selection">
-        <label for="password">PASSWORD</label>
-        <input name="password" type="password" onChange="change()">
-      </form>
-      <form action="" id="selection">
-        <label for="verify-password"> VERIFY PASSWORD</label>
-        <input name="confirm" type="password" onChange="change()">
-      </form>
+  <div id="maincontain">
+    <div id="left-side">
+      <div id="card"> JOCCHE VINTAGE CO.</div>
     </div>
-    
-    <div>
-      <button>JOIN!</button>
+
+    <div id="right">
+      <p>Interested in the lastest finds? Join & stay updated!</p>
+      <div id="entries">
+        <form action="" id="selection">
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" required>
+        </form>
+        <form action="" id="selection">
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name">
+        </form>
+        <form action="" id="selection">
+          <label for="email">e-mail</label>
+          <input type="email" id="email" required>
+        </form>
+        <form action="" id="selection">
+          <label for="phone">Phone</label>
+          <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required id="phone">
+        </form>
+        <form action="" id="selection">
+          <label for="password">Password</label>
+          <input name="password" type="password" onChange="change()" required>
+        </form>
+        <form action="" id="selection">
+          <label for="verify-password"> Confirm  Password</label>
+          <input name="confirm" type="password" onChange="change()">
+        </form>
+      </div>
+      
+      <div>
+        <button>JOIN!</button>
+      </div>
     </div>
   </div>
   
 </body>
-<footer></footer>
+<footer> <div>photo by Ajeet Mestry on Splash</div></footer>
 <script>
   function change(){
     const password = document.querySelector('input[name=password]');
     const confirm = document.querySelector('input[name=confirm]');
-    if (password.value === confirm.value){
-      confirm.style.borderColor = "green";
-    }
-    else {
-      confirm.style.borderColor = "red";
-    }
+    password.value === confirm.value ? confirm.style.borderColor = "green" : confirm.style.borderColor = "red";
+    
   }
 </script>
 </html>

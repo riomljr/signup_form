@@ -1,9 +1,11 @@
-body {
+#maincontain {
   display: flex;
   height: 100vh;
   background-color: rgb(251, 228, 205);
 }
-
+footer{
+  position: absolute;
+}
 input:focus{
   border-color: blue;
 }
@@ -33,24 +35,25 @@ p{
   flex-wrap: wrap;
   width: 40vh;
   gap: 20px;
-  padding: 10px;
+  padding: 15px;
   justify-content: space-around;
   align-items: stretch;
+  color: white;
   box-shadow:  10px 10px 10px rgb(247, 212, 177);
   font-family: 'RursusCompactMonoMedium';
   border-radius: 20px;
-  
- 
+  background-image: url("shirt.jpg");
+  opacity: 70%;
 }
 
 input{
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2px;
   font-family: 'RursusCompactMonoMedium'; 
 
 }
 
-#right-side{
+#left-side{
   display: flex;
   background-image: url("vintage.jpg");
   border-radius: 50px;
@@ -58,7 +61,7 @@ input{
 
 }
 
-#left {
+#right {
   display: flex;
   flex-direction: column;
   gap: 20px;
