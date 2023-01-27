@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(251, 228, 205);
+}
+
+input:focus{
+  border-color: blue;
+}
+
+input:invalid{
+  border-color: red;
+}
+
+
+#selection {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+}
+button{
+  background-color: rgb(178, 203, 195);
+  padding: 8px;
+  margin-left: 40%;
+  border-radius: 5px;
+}
+p{
+  font-family: 'RursusCompactMonoMedium';
+}
+#entries{
+  display: flex;
+  flex-wrap: wrap;
+  width: 40vh;
+  gap: 20px;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: stretch;
+  box-shadow:  10px 10px 10px rgb(247, 212, 177);
+  font-family: 'RursusCompactMonoMedium';
+  border-radius: 20px;
+  
+ 
+}
+
+input{
+  border-radius: 10px;
+  padding: 2px;
+  font-family: 'RursusCompactMonoMedium'; 
+
+}
+
+#right-side{
+  display: flex;
+  background-image: url("vintage.jpg");
+  border-radius: 50px;
+  min-width: 550px;
+
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+#card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50%;
+  height: 10%;
+  width: 100%;
+  background: black;
+  opacity: 0.6;
+  color: white;
+  font-size: 2em;
+  font-family: 'RursusCompactMonoMedium';
+   font-weight: normal; 
+   font-style: normal; 
+}
